@@ -180,3 +180,16 @@ Centos/RHel
     enabled=1
     EOF
     sudo yum install brave-browser-dev
+
+
+=======
+openSUSE
+----------
+::
+    sudo rpm --import  https://brave-browser-rpm-dev.s3.brave.com/brave-core-nightly.asc
+    
+    zypper ar -f https://brave-browser-rpm-dev.s3.brave.com/x86_64/ brave
+    
+    zypper update
+    
+    zypper install brave-browser-dev
